@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(162, 222, 241);
+    background-image : url('download.png');
+    background-position:top right;
+    background-size:cover;
+}
+p{
+
+    font-size:30px;
+    font-family: Arial;
+    color: rgb(246, 238, 240);
+    font-weight:700;
+    font-style:italic;
+    text-align: center;
+    text-shadow:1px 1px 10px #FFF;
+    clear:both;
+}
+#para{
+    color:aliceblue;
+    display:inline-block;
+}
+img{
+    float:left;
+}
