@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        html,*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        main{
+            display:grid;
+            grid-template-rows: repeat(5,1fr);
+            gap:10px;
+        }
+        .box{
+            background-color: antiquewhite;
+            height:200px;
+        }
+        .container{
+            display:grid;
+            grid-template-areas:
+            'aside box1 box2 box3 box4';
+            gap:10px;
+        }
+        .section{
+            display:grid;
+            grid-template-columns: repeat(5,1fr);
+            background-color: antiquewhite;
+            gap:10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box"><h2><center>Hello World!</center></h2></div>
+        <div class="container">
+  <div class="item1">Aside</div>
+  <div class="item2">Box1</div>
+  <div class="item3">Box2</div>  
+  <div class="item4">Box3</div>
+  <div class="item5">Box4</div>
+</div>
+        <div class="box"><h2><center>Footer</center></h2></div>
+    </main>
+</body>
+</html>
